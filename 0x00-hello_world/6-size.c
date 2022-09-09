@@ -9,7 +9,7 @@
 int main(void)
 {
 	char charType;
-	int inttype;
+	int intType;
 	long longType;
 	long long longerType;
 	float floatType;
