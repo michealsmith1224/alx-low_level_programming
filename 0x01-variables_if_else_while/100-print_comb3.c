@@ -2,27 +2,33 @@
 /**
   * main - Entry point
   *
-  * Return 0
+  * Return: 0
 */
 
 int main(void)
 {
-	int d1;
+	int d1 = 48;
 	int d2;
+	int d3 = 44;
 
-	for (d1 = 0; d1 < 10; d1++)
+	while (d1 <= 57)
 	{
-		for (d2 = 0; d2 < 9; d2++)
+		d2 = d1 + 1;
+		while (d2 <= 57)
 		{
-			putchar((d1 % 10) + '0');
-			putchar((d2 % 10) + '0');
-			if (d1 == 9 && d2 == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
-		}
+			putchar(d1);
+			putchar(d2);
+			if (d1 != 56 || d2 != 57)
+			{
+				putchar(d3);
+				putchar(32);
+			}
 
+			d2++;
+		}
+		d1++;
 	}
+
 
 	putchar('\n');
 	return (0);
