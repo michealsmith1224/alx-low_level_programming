@@ -7,30 +7,33 @@
 
 int main(void)
 {
-	int a,b,c,d;
+	int ifirst;
+	int i;
+	int jfirst;
+	int j;
 
-	for (a = 48; a < 58; a++)
+	for (ifirst = 48; ifirst < 58; ifirst++)
 	{
-		for ( b = 48; b < 58; b++)
+		for ( i = 48; i < 58; i++)
 		{
-			c = b + 1;
-			d = a;
-			for ( ; d < 58; d++)
+			j = i + 1;
+			jfirst = ifirst;
+			for ( ; jfirst < 58; jfirst++)
 			{
-				for (; d < 58; d++)
+				for (; j < 58; j++)
 				{
-					putchar(a);
-					putchar(b);
+					putchar(ifirst);
+					putchar(i);
 					putchar(' ');
-					putchar(c);
-					putchar(d);
-					if ( a != 57 || d != 57 || b != 57 || c != 57)
+					putchar(jfirst);
+					putchar(j);
+					if ( ifirst != 57 || jfirst != 57 || i != 57 || j != 57)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				d =48;
+				j =48;
 			}
 		}
 	}
