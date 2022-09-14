@@ -2,6 +2,8 @@
 /**
   * _abs - Entry point
   *
+  * @n: - expecting parameter
+  *
   * Return: void
 */
 
