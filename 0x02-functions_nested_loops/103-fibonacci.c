@@ -21,9 +21,7 @@ int main(void)
 		{
 			sum += next;
 		}
-
-	
 	}
-	 printf("%i\n", sum);
-	 return (0);
+	printf("%i\n", sum);
+	return (0);
 }
