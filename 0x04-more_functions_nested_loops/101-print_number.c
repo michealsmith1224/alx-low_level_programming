@@ -4,36 +4,24 @@
   * print_number - prints numbers
   *
   * @n: number to be printed
-  *
-  * Return: void
 */
 
 void print_number(int n)
 {
-	int d = 1, i = 0, ii = 0;
+	unsigned int k = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
-	}
-	while (n / d != 0)
-	{
-		d *= 10;
-		i++;
-	}
-	d = d / 10;
-
-	while (ii < i)
-	{
-		_putchar('0' + n / d);
-		n = n - (n / d) * d;
-		d = d / 10;
-		ii++;
+		k = -k;
 	}
 
-	if (i == 0)
+	if (k > 9)
 	{
-		_putchar('0' + n);
+		print_number(k / 10);
 	}
+
+	_putchar(k % 10 + '0');
 }
+
+
