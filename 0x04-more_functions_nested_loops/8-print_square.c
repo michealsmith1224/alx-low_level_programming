@@ -3,6 +3,8 @@
 /**
   * print_square - print square
   *
+  * @size: nuimber printed
+  *
   * Return: 0
 */
 
