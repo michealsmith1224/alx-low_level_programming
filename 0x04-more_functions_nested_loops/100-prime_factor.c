@@ -5,8 +5,6 @@
 /**
   * main - prime numbers
   *
-  * @n: char received
-  *
   * Return: 0
 */
 
