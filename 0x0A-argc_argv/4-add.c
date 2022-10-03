@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 			sum += str_int;
 		} else
 		{
-			printf("Error");
+			printf("Error\n");
 			return (1);
 		}
 		j++;
