@@ -1,12 +1,11 @@
 #include "main.h"
 
-
 /**
   * _isdigit - check digit
-  *
-  * @c: para
+  * @c: para1
   * Return: 0
 */
+
 
 int _isdigit(int c __attribute__((unused)))
 {
