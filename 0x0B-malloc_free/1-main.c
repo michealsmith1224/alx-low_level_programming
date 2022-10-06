@@ -14,7 +14,7 @@ int main(void)
 	char *s;
 
 
-	s = _strdup("ALX SOFTWARE ENGINERING");
+	s = _strdup("ALX SE");
 	if (s == NULL)
 	{
 		printf("failed to allocate memory\n");
