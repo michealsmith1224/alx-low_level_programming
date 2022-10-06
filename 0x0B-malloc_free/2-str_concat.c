@@ -14,10 +14,10 @@ char *str_concat(char *s1, char *s2)
 	int len, len1, i, total, k;
 
 	if (s1 == NULL)
-		return ("");
+		s1 = "";
 
 	if (s2 == NULL)
-		return ("");
+		s2 = "";
 	len = 0;
 	while (s1[len] != '\0')
 	{
