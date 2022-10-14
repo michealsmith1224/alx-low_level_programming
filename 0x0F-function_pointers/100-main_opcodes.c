@@ -4,7 +4,7 @@
   * main - print opcode
   * @argc: para 1
   * @argv: para 2
-  * Return 0
+  * Return: 0
 */
 
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for(i = 0; i < byte; i++)
+	for (i = 0; i < byte; i++)
 	{
 		printf("%02hhx", *((char *)main + i));
 
@@ -49,7 +49,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-		
-
-
 
