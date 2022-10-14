@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
@@ -10,7 +8,7 @@
 */
 
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 
 	int a = 0, b = 0, res = 0;
