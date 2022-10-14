@@ -2,23 +2,23 @@
 /**
   * get_op_func - to select func
   * @s: the oprator passed
-  * @c: para1
-  * @d: parac 2
+  *
+  *
   * Return: 0
 */
 
 
 
 
-int (*get_op_func(char *s))(int c, int d)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
-        	{"-", op_sub},
-        	{"*", op_mul},
-        	{"/", op_div},
-        	{"%", op_mod},
-        	{NULL, NULL}
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
 	};
 
 	int i;
