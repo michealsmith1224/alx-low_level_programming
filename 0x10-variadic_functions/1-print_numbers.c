@@ -15,8 +15,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list other_num;
 
 
-	if (separator == NULL || n == 0)
+	if (separator == NULL)
 		return;
+
 
 	i = 0;
 
@@ -34,6 +35,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		i++;
 	}
+	va_end(other_num);
 
 	printf("\n");
 }
