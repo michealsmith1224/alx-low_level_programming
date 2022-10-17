@@ -23,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 	sum = 0;
 	i = 0;
 
-	va_start(other_num,n);
+	va_start(other_num, n);
 
 	while (i < n)
 	{
