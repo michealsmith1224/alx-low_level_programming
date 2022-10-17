@@ -14,12 +14,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	if (n > 0)
 	{
-
-
 		unsigned int i;
 
 		va_list others;
 		char *b;
+
+		if (separator == NULL)
+			separator = "";
 
 
 		va_start(others, n);
@@ -34,16 +35,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			printf("%s", b);
 
-			if (separator != NULL && i != n - 1)
+			if (i != n - 1)
 				printf("%s", separator);
 
 
 			i++;
 		}
+		printf("\n");
 
 		va_end(others);
-
-		printf("\n");
 	}
 }
 
