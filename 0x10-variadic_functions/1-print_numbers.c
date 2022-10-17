@@ -11,6 +11,9 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	if (n > 0)
+	{
+
 
 		unsigned int i;
 		int b;
@@ -32,6 +35,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_end(other_num);
 
 		printf("\n");
+
+	}
 
 
 }
