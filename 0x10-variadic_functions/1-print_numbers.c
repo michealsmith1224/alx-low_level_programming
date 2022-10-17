@@ -11,15 +11,13 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	if (n != 0)
-	{
 
 		unsigned int i;
 		int b;
 		va_list other_num;
 
 		i = 0;
-	
+
 		va_start(other_num, n);
 
 		while (i < n)
@@ -35,6 +33,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		printf("\n");
 
-	}
+
 }
 
