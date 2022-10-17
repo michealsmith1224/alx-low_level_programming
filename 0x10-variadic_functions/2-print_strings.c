@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		char *b;
 
 		if (separator == NULL)
-			separator = "";
+			separator = " ";
 
 
 		va_start(others, n);
