@@ -12,7 +12,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	if (n != 0)
+	if (n > 0)
 	{
 
 
@@ -39,6 +39,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			i++;
 		}
+
+		va_end(others);
 
 		printf("\n");
 	}
