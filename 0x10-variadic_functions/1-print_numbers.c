@@ -20,6 +20,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	if (separator == NULL)
 		return;
 
+	if (n == 0)
+		return;
+
 	va_start(other_num, n);
 
 	while (i < n)
