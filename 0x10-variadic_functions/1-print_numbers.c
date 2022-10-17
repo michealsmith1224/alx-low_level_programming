@@ -11,25 +11,30 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
-	int b;
-	va_list other_num;
-
-	i = 0;
-
-	va_start(other_num, n);
-
-	while (i < n)
+	if (n != 0)
 	{
-		b = va_arg(other_num, int);
-		printf("%d", b);
 
-		if (separator != NULL && i != n - 1)
-			printf("%s ", separator);
-		i++;
+		unsigned int i;
+		int b;
+		va_list other_num;
+
+		i = 0;
+	
+		va_start(other_num, n);
+
+		while (i < n)
+		{
+			b = va_arg(other_num, int);
+				printf("%d", b);
+
+			if (separator != NULL && i != n - 1)
+				printf("%s ", separator);
+			i++;
+		}
+		va_end(other_num);
+
+		printf("\n");
+
 	}
-	va_end(other_num);
-
-	printf("\n");
 }
 
