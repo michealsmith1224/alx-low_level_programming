@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 	int_len = 0;
 
 	while (*s && strchr(accept, *s++))
-			int_len++;
+		int_len++;
 
 	return (int_len);
 }
