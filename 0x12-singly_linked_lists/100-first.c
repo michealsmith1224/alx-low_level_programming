@@ -9,6 +9,6 @@
 
 void first_run(void)
 {
-	printf("you're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	printf(
+			"you're beat! and yet, you must allow,\nI bore my houseupon my back!\n");
 }
