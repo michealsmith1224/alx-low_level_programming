@@ -4,7 +4,7 @@
   * _putchar - write to std output
   * @c: para passed
   *
-  * Return (0)
+  * Return: (0)
 */
 
 
