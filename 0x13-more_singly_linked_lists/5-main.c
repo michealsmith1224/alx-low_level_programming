@@ -22,5 +22,7 @@ int main(void)
     	print_listint(head);
     	free_listint2(&head);
     	printf("%p\n", (void *)head);
+	if (head == NULL)
+		printf("deleted succesfully");
     	return (0);
 }
